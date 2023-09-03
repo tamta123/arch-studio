@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
-const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
-const Portfolio = lazy(() => import("./pages/Portfolio"));
-const Contact = lazy(() => import("./pages/Contact"));
+const Home = lazy(() => import("./pages/Home/Home.tsx"));
+const About = lazy(() => import("./pages/About/About"));
+const Portfolio = lazy(() => import("./pages/Portfolio/Portfolio"));
+const Contact = lazy(() => import("./pages/Contact/Contact"));
 
 const Routing = () => {
   return (

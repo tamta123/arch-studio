@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
-const Arrow = () => {
+const Arrow: React.FC<{ dark: boolean }> = ({ dark }) => {
   return (
     <Svg>
       <svg>
-        <g fill="none" fill-rule="evenodd" stroke="#1B1D23" stroke-width="2">
+        <g
+          fill="none"
+          fillRule="evenodd"
+          stroke={dark ? "#1B1D23" : "#ffff"}
+          strokeWidth="2"
+        >
           <path d="M15 1l9 9-9 9M0 10h24" />
         </g>
       </svg>
